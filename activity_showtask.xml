@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.showtask">
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/showtaskimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icontodolist_foreground"
+            android:layout_margin="15dp"
+            android:padding="6dp"/>
+        <TextView
+            android:layout_toRightOf= "@+id/showtaskimg"
+            android:id="@+id/showtaskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_margin="40dp"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/showdescription"
+            android:layout_below="@+id/showtaskimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task description"
+            android:layout_centerHorizontal="true"/>
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/showdescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Description"
+                android:id="@+id/showtaskDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:padding="6dp"
+                android:textSize="20sp"/>
+        </androidx.core.widget.NestedScrollView>
+        <Button
+            android:id="@+id/showtaskButton"
+            android:text="Finish"
+            android:textColor="#ffffff"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:background="#00BCD4"
+            android:textSize="22sp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

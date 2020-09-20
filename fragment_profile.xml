@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.fragment.profile">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/aboutprofilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icontodolistround"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/aboutprofilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:textSize="34sp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/textFailed"
+        android:layout_below="@+id/aboutprofilepic"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Failed"/>
+
+    <TextView
+        android:id="@+id/textSucess"
+        android:layout_below="@+id/aboutprofilepic"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/textFailed"
+        android:text="Success"/>
+
+
+    <TextView
+        android:id="@+id/inputFailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFailed"
+        android:text="0"
+        android:layout_margin="20dp"
+        android:textSize="50sp"
+        android:textColor="#E4190A"/>
+
+    <TextView
+        android:layout_below="@+id/textSucess"
+        android:layout_toRightOf="@+id/inputFailed"
+        android:id="@+id/inputSucess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+
+        android:textColor="#027A07"
+        android:textSize="50sp"/>
+</RelativeLayout>

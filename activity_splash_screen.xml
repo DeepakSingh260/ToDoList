@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashScreen"
+    android:background="#B37111">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgsplah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/todolist"
+
+        />
+
+    <TextView
+        android:id="@+id/splashtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/spashtxt"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_below="@+id/imgsplah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+</RelativeLayout>

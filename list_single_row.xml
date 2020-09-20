@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:id="@+id/rlcontent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgsinglerow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icontodolist_foreground"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+
+        android:id="@+id/txtsinglerow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task"
+
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_toRightOf="@+id/imgsinglerow"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

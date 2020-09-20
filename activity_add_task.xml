@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.AddTask">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icontodolist_foreground"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:layout_below="@+id/imgimg"
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addTitle"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"/>
+    <EditText
+        android:id="@+id/inputTitless"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/inputText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="6dp"/>
+    <TextView
+        android:id="@+id/addDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addDescription"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp"
+        android:layout_below="@+id/inputTitless"/>
+
+    <EditText
+        android:id="@+id/inputDescription"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/addDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:padding="6dp"/>
+
+    <Button
+        android:id="@+id/addtaskbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_task"
+        android:layout_alignParentBottom="true"
+        android:background="#2196F3"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+
+
+
+
+
+</RelativeLayout>
