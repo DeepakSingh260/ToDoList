@@ -19,7 +19,8 @@ import com.example.todolist.activity.showtask
 
 class ListAdapter(val context: Context, val taskList: List<TaskEntity>):RecyclerView.Adapter<ListAdapter.ListViewHolder>(),
     android.widget.ListAdapter {
-
+        
+        
     class ListViewHolder(view:View) : RecyclerView.ViewHolder(view){
 
         val rlView:RelativeLayout = view.findViewById(R.id.rlcontent)
